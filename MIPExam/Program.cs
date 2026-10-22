@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MIPExam.MIPEx;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +17,10 @@ namespace MIPExam
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            using (Database database = new Database())
+            {
+                database.GenerateRequiredEmployees();
+            }
             Application.Run(new Form1());
         }
     }
