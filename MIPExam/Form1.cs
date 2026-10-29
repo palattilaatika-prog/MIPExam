@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace MIPExam
 {
+    
     public partial class Form1 : Form
     {
         private readonly Database database;
@@ -28,6 +29,7 @@ namespace MIPExam
 
         private void button2_Click(object sender, EventArgs e)
         {
+            database.CreateSchema();
 
         }
 
@@ -39,7 +41,6 @@ namespace MIPExam
                 {
                     employee.Id,
                     employee.Name,
-                    Role = employee.GetRoleName(),
                     employee.MonthlySalary
                 })
                 .ToList();

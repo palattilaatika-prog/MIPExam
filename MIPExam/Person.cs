@@ -8,10 +8,10 @@ namespace MIPExam
 {
     public abstract class Person
     {
-        private int Id { get;set; }
-        private string Name { get; set; }
+        public int Id { get;set; }
+        public string Name { get; set; }
 
-        protected Person(int id, string name)
+        public Person(int id, string name)
         {
             Id = id;
             Name = name;

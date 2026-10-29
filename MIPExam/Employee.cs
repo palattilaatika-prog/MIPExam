@@ -8,7 +8,7 @@ namespace MIPExam
 {
     public class Employee : Person
     {
-        private decimal MonthlySalary { get; set; }
+        public decimal MonthlySalary { get; set; }
 
         public Employee(int id, string name, decimal monthlySalary) : base(id, name)
         {

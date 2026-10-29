@@ -36,7 +36,7 @@ namespace MIPExam
                 traceInitialized = true;
             }
 
-            private void CreateSchema()
+            public void CreateSchema()
             {
                 using (SQLiteCommand command = connection.CreateCommand())
                 {
